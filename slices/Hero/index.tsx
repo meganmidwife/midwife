@@ -4,6 +4,7 @@ import { PrismicRichText, SliceComponentProps } from "@prismicio/react";
 import { Bounded } from "@/components/Bounded";
 import { PrismicNextImage } from "@prismicio/next";
 import { FadeIn } from "@/components/FadeIn";
+import { RevealText } from "@/components/RevealText";
 
 /**
  * Props for `Hero`.
@@ -20,13 +21,31 @@ const Hero: FC<HeroProps> = ({ slice }) => {
       data-slice-variation={slice.variation}
       className="relative min-h-screen overflow-hidden bg-blue-300"
     >
-       <FadeIn
+      <FadeIn
         vars={{ scale: 1, opacity: 0.5 }}
         className="absolute inset-0 opacity-0 motion-safe:scale-125"
       >
-        <PrismicNextImage field={slice.primary.image} />
+        <PrismicNextImage
+          field={slice.primary.image}
+          alt=""
+          priority
+          fill
+          className="object-cover motion-reduce:opacity-50"
+        />
       </FadeIn>
-      <PrismicRichText field={slice.primary.heading} />
+      <div className="relative flex h-screen flex-col justify-center">
+        <RevealText
+          field={slice.primary.heading}
+          id="hero-heading"
+          className="font-display max-w-xl text-6xl leading-none text-neutral-50 md:text-7xl lg:text-8xl"
+          staggerAmount={0.2}
+          duration={1.7}
+          as="h1"
+        />
+
+       
+        
+      </div>
     </Bounded>
   );
 };

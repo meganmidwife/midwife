@@ -44,7 +44,7 @@ export const NavBar = ({ settings }: NavBarProps) => {
 
   return (
     <header>
-      <div className="navbar fixed top-0 left-0 z-50 w-full bg-slate-900/60 text-white">
+      <div className="navbar fixed top-0 left-0 z-50 w-full bg-blue-400/60 text-white">
         <div className="flex items-center justify-between p-2 md:p-4">
           <button
             onClick={toggleDrawer}
@@ -68,7 +68,7 @@ export const NavBar = ({ settings }: NavBarProps) => {
 
       <div
         className={clsx(
-          "nav-drawer-blur fixed inset-0 z-40 bg-black/40 opacity-0 transition-all duration-500",
+          "nav-drawer-blur fixed inset-0 z-40 bg-blue-400/70 opacity-0 transition-all duration-500",
           isDrawerOpen
             ? "pointer-events-auto opacity-100 backdrop-blur-xs"
             : "pointer-events-none backdrop-blur-none",
@@ -79,7 +79,7 @@ export const NavBar = ({ settings }: NavBarProps) => {
 
       <div
         className={clsx(
-          "nav-drawer fixed top-0 left-0 z-50 h-full w-72 bg-neutral-900 p-6 transition-transform duration-500",
+          "nav-drawer fixed top-0 left-0 z-50 h-full w-72 bg-blue-400/70 p-6 transition-transform duration-500",
           isDrawerOpen ? "translate-x-0" : "-translate-x-full",
         )}
         role="dialog"

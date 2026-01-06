@@ -79,7 +79,7 @@ export const NavBar = ({ settings }: NavBarProps) => {
 
       <div
         className={clsx(
-          "nav-drawer fixed top-0 left-0 z-50 h-full w-72 bg-blue-400/70 p-6 transition-transform duration-500",
+          "nav-drawer fixed top-0 left-0 z-50 h-full w-72 bg-gradient-to-r from-blue-600/70  p-6 transition-transform duration-500",
           isDrawerOpen ? "translate-x-0" : "-translate-x-full",
         )}
         role="dialog"
@@ -96,7 +96,7 @@ export const NavBar = ({ settings }: NavBarProps) => {
           </button>
         </div>
 
-        <nav className="space-y-4" aria-label="Main Navigation">
+        <nav className="space-y-4 " aria-label="Main Navigation">
           {settings.data.navigation_link.map((link) => (
             <TransitionLink
               field={link}

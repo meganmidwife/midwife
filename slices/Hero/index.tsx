@@ -1,11 +1,10 @@
 import { FC } from "react";
 import { Content } from "@prismicio/client";
-import { PrismicRichText, PrismicText, SliceComponentProps } from "@prismicio/react";
+import { PrismicText, SliceComponentProps } from "@prismicio/react";
 import { Bounded } from "@/components/Bounded";
 import { PrismicNextImage } from "@prismicio/next";
 import { FadeIn } from "@/components/FadeIn";
 import { RevealText } from "@/components/RevealText";
-import as from '../../.next/dev/server/chunks/ssr/_d533d28c._';
 
 /**
  * Props for `Hero`.

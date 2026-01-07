@@ -9,7 +9,7 @@ import clsx from "clsx";
 export const Footer = () => {
 
   return (
-    <footer aria-labelledby="footer-heading" className={clsx("bg-blue-400/60 z-3 fixed bottom-0 w-full")}>
+    <footer aria-labelledby="footer-heading" className={clsx("bg-background z-3 fixed bottom-0 w-full")}>
       <div className={clsx("container mx-auto" )}>
        
 
@@ -23,7 +23,7 @@ export const Footer = () => {
             aria-label="Megan midwife"
             className="order-first md:order-0"
           >
-            <Image src="/templogo.jpeg" alt="Megan midwife logo" width={50} height={7} />
+            <Image src="/basicLogo.png" alt="Megan midwife logo" width={50} height={7} />
           </Link>
           <ul
             aria-label="Legal"

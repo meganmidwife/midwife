@@ -1,20 +1,26 @@
 {
   "format": "page",
-  "id": "homepage",
-  "label": "homepage",
-  "repeatable": false,
+  "id": "docs",
+  "label": "Docs",
+  "repeatable": true,
   "status": true,
   "json": {
     "Main": {
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "UID"
+        }
+      },
       "slices": {
         "type": "Slices",
         "fieldset": "Slice Zone",
         "config": {
           "choices": {
-            "about": {
+            "doc_body_slice": {
               "type": "SharedSlice"
             },
-            "hero": {
+            "doc_heading": {
               "type": "SharedSlice"
             }
           }

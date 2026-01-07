@@ -1,8 +1,8 @@
 {
-  "id": "hero",
+  "id": "doc_heading",
   "type": "SharedSlice",
-  "name": "Hero",
-  "description": "Hero",
+  "name": "DocHeading",
+  "description": "DocHeading",
   "variations": [
     {
       "id": "default",
@@ -12,29 +12,13 @@
       "description": "Default",
       "imageUrl": "",
       "primary": {
-        "logo": {
-          "type": "Image",
-          "config": {
-            "label": "Logo",
-            "constraint": {},
-            "thumbnails": []
-          }
-        },
-        "image": {
-          "type": "Image",
-          "config": {
-            "label": "Image",
-            "constraint": {},
-            "thumbnails": []
-          }
-        },
         "heading": {
           "type": "StructuredText",
           "config": {
             "label": "Heading",
             "placeholder": "",
             "allowTargetBlank": true,
-            "multi": "heading1,strong,em"
+            "multi": "strong,em,heading1"
           }
         },
         "description": {
@@ -43,7 +27,7 @@
             "label": "Description",
             "placeholder": "",
             "allowTargetBlank": true,
-            "multi": "paragraph,strong,em,hyperlink"
+            "multi": "paragraph,strong,em,list-item,o-list-item,hyperlink"
           }
         }
       },

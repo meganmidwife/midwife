@@ -1,7 +1,7 @@
 {
   "format": "page",
-  "id": "homepage",
-  "label": "homepage",
+  "id": "policy",
+  "label": "policy",
   "repeatable": false,
   "status": true,
   "json": {
@@ -11,10 +11,10 @@
         "fieldset": "Slice Zone",
         "config": {
           "choices": {
-            "about": {
+            "doc_body_slice": {
               "type": "SharedSlice"
             },
-            "hero": {
+            "doc_heading": {
               "type": "SharedSlice"
             }
           }

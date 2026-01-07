@@ -13,19 +13,21 @@
           "placeholder": ""
         }
       },
-      "meta_description": {
-        "type": "Text",
-        "config": {
-          "label": "Meta Description",
-          "placeholder": ""
-        }
-      },
       "fallback_og_image": {
         "type": "Image",
         "config": {
           "label": "Fallback OG Image",
           "constraint": {},
           "thumbnails": []
+        }
+      },
+      "fallback_og_caption": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Fallback OG caption",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "paragraph,strong,em"
         }
       },
       "navigation_link": {
@@ -37,6 +39,25 @@
           "allowTargetBlank": true,
           "allowText": true,
           "repeat": true
+        }
+      },
+      "meta_description": {
+        "type": "Text",
+        "config": {
+          "label": "Meta Description",
+          "placeholder": ""
+        }
+      },
+      "social_links": {
+        "type": "Link",
+        "config": {
+          "label": "Social Links",
+          "placeholder": "",
+          "select": null,
+          "allowTargetBlank": true,
+          "allowText": true,
+          "repeat": true,
+          "variants": ["Facebook", "Instagram", "X", "LinkedIn"]
         }
       }
     }
